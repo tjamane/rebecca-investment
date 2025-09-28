@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { AlertTriangle, CheckCircle, MessageCircle, TrendingUp, Users, Shield } from "lucide-react"
+import InvestmentChatbot from "@/components/investment-chatbot"
 
 export default function InvestmentLandingPage() {
   const [formData, setFormData] = useState({
@@ -289,6 +290,9 @@ export default function InvestmentLandingPage() {
           </p>
         </div>
       </footer>
+
+      {/* Investment Maximus chatbot component */}
+      <InvestmentChatbot />
     </div>
   )
 }
